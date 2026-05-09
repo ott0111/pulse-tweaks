@@ -1,1 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  border-color: rgba(255,255,255,0.08);
+}
+
+::selection {
+  background: rgba(255,255,255,0.2);
+}
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.6)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  pointer-events: none;
+}
